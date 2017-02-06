@@ -40,7 +40,7 @@ winnerArr.map( (item) => ({winner: item}) )
 var battle = (goesFirst, goesSecond) => {
   let goesFirstTurn = true;
 
-  while(goesFirst.hasHealth() && goesSecond.hasHealth()) {
+  while (goesFirst.hasHealth() && goesSecond.hasHealth()) {
     goesSecond.health -= goesFirst.attack();
   }
 }

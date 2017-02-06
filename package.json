@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "npm run build && nodemon app.js",
+    "build": "babel --presets es2015 index.js --out-file app.js --watch"
   },
   "repository": {
     "type": "git",
